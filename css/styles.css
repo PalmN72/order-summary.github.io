@@ -1,0 +1,160 @@
+:root {
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+  --clr-white: white;
+
+  --clr-very-pale-blue: hsl(229, 52%, 96%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+  --clr-dark-blue-light: hsl(223, 44%, 56%);
+
+  font-size: 16px;
+  --ff-regular: "Red Hat Display", sans-serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-extra-bold: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  background: url(/images/pattern-background-mobile.svg);
+  background-repeat: repeat-x;
+  background-color: var(--clr-pale-blue);
+  font-family: var(--ff-regular);
+}
+
+main {
+  margin-top: 3em;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.container {
+  overflow: hidden;
+  max-width: 450px;
+  text-align: center;
+  background-color: var(--clr-white);
+  border-radius: 1em;
+}
+
+.product {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-very-pale-blue);
+  border-radius: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1,
+h2 {
+  color: var(--clr-dark-blue);
+}
+
+h1 {
+  padding: 1em;
+  font-size: 1.5rem;
+  font-weight: var(--fw-extra-bold);
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: var(--fw-extra-bold);
+}
+
+p {
+  font-weight: var(--fw-regular);
+  color: var(--clr-desaturated-blue);
+}
+
+.description {
+  padding: 0 2.5em;
+}
+
+.hero__img {
+  max-width: 100%;
+}
+
+.icon {
+  margin-top: 0.3em;
+  display: inline;
+  border-radius: 50%;
+}
+
+a {
+    font-weight: var(--fw-bold);
+}
+
+a:hover {
+    color: var(--clr-dark-blue-light);
+}
+
+a:active {
+    color: var(--clr-dark-blue);
+}
+
+button {
+  border: none;
+}
+
+.btn-payment {
+  width: 90%;
+  border-radius: 1em;
+  padding: 1em;
+  color: var(--clr-pale-blue);
+  background-color: var(--clr-bright-blue);
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-weight: var(--fw-extra-bold);
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: var(--clr-desaturated-blue);
+  margin-top: 1em;
+  margin-bottom: 3em;
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+}
+
+.btn-payment:hover {
+    background-color: var(--clr-dark-blue-light);
+}
+
+.btn-cancel:hover {
+    color: var(--clr-dark-blue);
+}
+
+.btn-payment:active {
+    background-color: var(--clr-dark-blue);
+}
+
+.btn-cancel:active {
+    color: var(--clr-pale-blue);
+}
+
+@media only screen and (min-width: 600px){
+    body {
+        background: url(/images/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+        background-color: var(--clr-pale-blue);
+        font-family: var(--ff-regular);
+    }
+}
+
+
