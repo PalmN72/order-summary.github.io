@@ -97,15 +97,15 @@ p {
 }
 
 a {
-    font-weight: var(--fw-bold);
+  font-weight: var(--fw-bold);
 }
 
 a:hover {
-    color: var(--clr-dark-blue-light);
+  color: var(--clr-dark-blue-light);
 }
 
 a:active {
-    color: var(--clr-dark-blue);
+  color: var(--clr-dark-blue);
 }
 
 button {
@@ -133,28 +133,26 @@ button {
 }
 
 .btn-payment:hover {
-    background-color: var(--clr-dark-blue-light);
+  background-color: var(--clr-dark-blue-light);
 }
 
 .btn-cancel:hover {
-    color: var(--clr-dark-blue);
+  color: var(--clr-dark-blue);
 }
 
 .btn-payment:active {
-    background-color: var(--clr-dark-blue);
+  background-color: var(--clr-dark-blue);
 }
 
 .btn-cancel:active {
-    color: var(--clr-pale-blue);
+  color: var(--clr-pale-blue);
 }
 
-@media only screen and (min-width: 600px){
-    body {
-        background: url(/images/pattern-background-desktop.svg);
-        background-repeat: repeat-x;
-        background-color: var(--clr-pale-blue);
-        font-family: var(--ff-regular);
-    }
+@media only screen and (min-width: 600px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: var(--clr-pale-blue);
+    font-family: var(--ff-regular);
+  }
 }
-
-
